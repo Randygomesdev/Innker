@@ -1,59 +1,67 @@
-# Innker
+# Innker Tecnologia — Software House
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.2.
+Este projeto compreende a Landing Page oficial, o Manual de Identidade Visual (Styleguide) e as páginas legais da **Innker Tecnologia**, uma software house dedicada ao desenvolvimento de ecossistemas digitais de alta performance.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🛠️ Stack Tecnológica
+
+- **Framework:** [Angular 21](https://angular.dev/)
+- **Estilização:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Fonte Oficial:** Montserrat (via Google Fonts)
+- **Gerenciador de Pacotes:** npm
+
+---
+
+## 🗺️ Estrutura de Rotas
+
+A aplicação utiliza o roteamento nativo do Angular com carregamento preguiçoso (*Lazy Loading*) para melhor performance do carregamento inicial:
+
+- **`/` (Home):** Landing Page provisória ("Em Breve") com animações modernas e glow neon.
+- **`/brand` (Manual da Marca):** Styleguide vivo contendo paleta de cores (HEX, RGB, CMYK, Pantone), regras de contraste, escala tipográfica, conformidade do logotipo e especificações dos componentes de UI (botões interativos).
+- **`/privacy` (Política de Privacidade):** Página legal obrigatória para integrações e aprovação de aplicativos na API oficial da Meta (WhatsApp, Facebook Login, etc.).
+- **`/terms` (Termos de Uso):** Termos e condições gerais de uso das ferramentas e integrações da Innker.
+
+---
+
+## ⚙️ Configuração Local
+
+### Pré-requisitos
+Certifique-se de ter o **Node.js** (versão 18 ou superior) instalado em sua máquina.
+
+### Passos para Instalação
+
+1. Clone o repositório do projeto:
+   ```bash
+   git clone https://github.com/randygomesdev/Innker.git
+   ```
+
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+3. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm start
+   ```
+
+4. Abra o navegador em: [http://localhost:4200/](http://localhost:4200/)
+
+---
+
+## 🚀 Build e Produção
+
+Para compilar o projeto com todas as otimizações de produção (minificação, tree-shaking e divisão de chunks):
 
 ```bash
-ng serve
+npm run build
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Os arquivos finais serão gerados no diretório `dist/innker`.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## ☁️ Deploy na Vercel
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+O deploy contínuo desta aplicação está configurado para a Vercel, realizando builds automáticos a cada commit na branch principal (`main` ou `master`).
