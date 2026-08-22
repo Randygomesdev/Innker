@@ -1,0 +1,519 @@
+<div class="bg-natural text-deep-black min-h-screen font-sans overflow-x-hidden selection:bg-red-supreme selection:text-natural-white">
+
+    <!--================ CAPA (COVER SECTION) ================-->
+    <section class="bg-deep-black min-h-screen flex flex-col relative overflow-hidden">
+
+        <!-- Textura sutil de Grid (adaptada com a cor Vermelho Supremo) -->
+        <div class="absolute inset-0 opacity-[0.03]"                                                                 
+             style="background-image: linear-gradient(var(--color-red-supreme) 1px, transparent 1px), linear-        
+  gradient(90deg, var(--color-red-supreme) 1px, transparent 1px); background-size: 48px 48px;">                      
+        </div>
+
+        <!-- Barra Superior -->
+         <div class="relative z-10 flex justify-between items-center px-8 py-10 md:px-16 border-b border-red-supreme/15">
+            <span class="text-[11px] font-semibold tracking-[0.18em] uppercase text-natural-white/40">Innker Tecnologia</span>
+            <span class="text-[11px] font-semibold tracking-[0.18em] uppercase text-natural-white/40">2026</span>
+         </div>
+
+         <!-- Conteúdo Hero da capa -->
+          <div class="flex-1 flex flex-col justify-center items-start px-8 py-20 md:px-16 max-w-300 mx-auto w-full relative z-10">
+            <!-- Detalhe superior da linha -->
+             <div class="flex items-center gap-3 mb-12 animate-fade-in">
+                <div class="w-8 h-[1px] bg-red-supreme"></div>
+                <span class="text-[11px] font-semibold tracking-[0.8em] uppercase text-red-supreme">Manual de Identidade Visual</span>
+             </div>
+
+             <!-- Exibição do Logotipo com Sombra Vermelha -->
+              <img src="/Logo-main.svg" alt="Innker Tecnologia - Logo Principal" class="h-20 md:h-28 w-auto object-left mb-16 filter drop-shadow-[0_4px_32pxrgba(237,28,36,0.25)]" />
+
+              <!-- Título Principal -->
+               <div class="max-w-140">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-natural-white leading-[1.05] mb-6 tracking-tight"> 
+                    Identidade <br />
+                    <span class="text-red-supreme">Visual</span>
+                </h1>
+                <p class="text-base text-natural-white/60 leading-relaxed font-light">
+                    Este manual define as diretrizes visuais da marca Innker Tecnologia — uma software house dedicada ao              
+  desenvolvimento de ecossistemas digitais de alta performance. As regras aqui descritas garantem a consistência e a 
+  clareza da nossa identidade em todos os pontos de contato.
+                </p>
+               </div>
+
+               <!-- Barra de Estatísticas da Identidade -->
+                <div class="flex flex-wrap gap-8 md:gap-16 mt-20 pt-12 border-t border-red-supreme/20 w-full">
+                    @for (item of stats; track item.label) {
+                        <div>
+                            <div class="text-3x1 md:text-4x1 font-extrabold text-red-supreme leading-none mb-1.5">{{ item.value }}</div>
+                            <div class="text-[10px] md:text-[11px] font-medium text-natural-white/40 tracking-wider uppercase">{{ item.label }} </div>
+                        </div>
+                    }
+                </div>
+          </div>
+
+          <!-- Faixa de Detalhe Vermelho na base da capa -->                                                                                                                                                                                        
+        <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-red-supreme via-red-supreme/40 to-transparent"></div>
+    </section>
+
+     <!-- ==================== SEÇÃO 01: LOGOTIPO ==================== -->                                                                                                                                                                       
+      <section id="logo" class="bg-natural-white px-8 py-24 md:px-16">                                                                                                                                                                            
+        <div class="max-w-[1200px] mx-auto">                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                  
+          <!-- Cabeçalho da Seção -->                                                                                                                                                                                                             
+          <div class="mb-16">                                                                                                                                                                                                                     
+            <div class="flex items-center gap-3 mb-4">                                                                                                                                                                                            
+              <span class="text-[11px] font-semibold tracking-[0.18em] uppercase text-deep-black/35">01</span>                                                                                                                                    
+              <div class="w-6 h-[1px] bg-red-supreme"></div>                                                                                                                                                                                      
+              <span class="text-[11px] font-semibold tracking-[0.18em] uppercase text-red-supreme">Logotipo</span>                                                                                                                                
+            </div>                                                                                                                                                                                                                                
+            <h2 class="text-3xl md:text-5xl font-extrabold text-deep-black leading-none mb-4 tracking-tight">                                                                                                                                     
+              Aplicações do Logotipo                                                                                                                                                                                                              
+            </h2>                                                                                                                                                                                                                                 
+            <p class="text-base text-deep-black/55 leading-relaxed max-w-[560px]">                                                                                                                                                                
+              O logotipo da Innker existe em três versões principais, projetadas para manter o máximo contraste e legibilidade em qualquer fundo de aplicação. Use sempre os arquivos originais fornecidos na pasta pública.                      
+            </p>                                                                                                                                                                                                                                  
+          </div>                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                  
+          <!-- Grid dos Cartões dos Logotipos -->                                                                                                                                                                                                 
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">                                                                                                                                                                               
+                                                                                                                                                                                                                                                  
+            <!-- Cartão 1: Logo Principal (Vermelho) -->                                                                                                                                                                                          
+            <div class="flex flex-col">                                                                                                                                                                                                           
+              <div class="bg-red-supreme rounded-t-2xl p-12 flex items-center justify-center min-h-[280px] relative overflow-hidden">                                                                                                             
+                <!-- Textura de malha sutil para o fundo do card -->                                                                                                                                                                              
+                <div class="absolute inset-0 opacity-[0.04]" style="background-image: linear-gradient(rgba(0,0,0,1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,1) 1px, transparent 1px); background-size: 24px 24px;"></div>        
+                <span class="absolute top-4 right-4 text-[9px] font-semibold tracking-wider uppercase text-natural-white/40 bg-natural-white/10 px-2.5 py-1 rounded">Versão 01</span>                                                             
+                <img src="/Logo-main.svg" alt="Innker Logo Principal" class="w-full max-w-[240px] object-contain relative z-10 filter drop-shadow-md" />                                                                                          
+              </div>                                                                                                                                                                                                                              
+              <div class="bg-white rounded-b-2xl p-6 border-t border-black/5">                                                                                                                                                                    
+                <h3 class="text-sm font-bold text-deep-black mb-1">Versão Principal — Vermelha</h3>                                                                                                                                               
+                <p class="text-xs text-deep-black/50 leading-relaxed">Uso institucional primário. Altamente recomendável em fundos neutros ou como destaque da marca.</p>                                                                         
+              </div>                                                                                                                                                                                                                              
+            </div>                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                  
+            <!-- Cartão 2: Logo Versão Escura (Deep Black) -->                                                                                                                                                                                    
+            <div class="flex flex-col">                                                                                                                                                                                                           
+              <div class="bg-deep-black rounded-t-2xl p-12 flex items-center justify-center min-h-[280px] relative overflow-hidden">                                                                                                              
+                <div class="absolute inset-0 opacity-[0.04]" style="background-image: linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px); background-size: 24px 24px;    
+  "></div>                                                                                                                                                                                                                                        
+                <span class="absolute top-4 right-4 text-[9px] font-semibold tracking-wider uppercase text-natural-white/40 bg-natural-white/10 px-2.5 py-1 rounded">Versão 02</span>                                                             
+                <img src="/Logo-Variation-2.svg" alt="Innker Logo Versão Escura" class="w-full max-w-[240px] object-contain relative z-10" />                                                                                                     
+              </div>                                                                                                                                                                                                                              
+              <div class="bg-white rounded-b-2xl p-6 border-t border-black/5">                                                                                                                                                                    
+                <h3 class="text-sm font-bold text-deep-black mb-1">Versão Secundária — Escura</h3>                                                                                                                                                
+                <p class="text-xs text-deep-black/50 leading-relaxed">Uso em interfaces escuras, rodapés institucionais e ambientes com iluminação controlada.</p>                                                                                
+              </div>                                                                                                                                                                                                                              
+            </div>                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                  
+            <!-- Cartão 3: Logo Versão Clara (Natural White) -->                                                                                                                                                                                  
+            <div class="flex flex-col">                                                                                                                                                                                                           
+              <div class="bg-[#e9e9e9] rounded-t-2xl p-12 flex items-center justify-center min-h-[280px] relative overflow-hidden border-x border-t border-black/5">                                                                              
+                <div class="absolute inset-0 opacity-[0.04]" style="background-image: linear-gradient(rgba(0,0,0,1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,1) 1px, transparent 1px); background-size: 24px 24px;"></div>        
+                <span class="absolute top-4 right-4 text-[9px] font-semibold tracking-wider uppercase text-deep-black/30 bg-deep-black/5 px-2.5 py-1 rounded">Versão 03</span>                                                                    
+                <img src="/Logo-Variation-1.svg" alt="Innker Logo Versão Clara" class="w-full max-w-[240px] object-contain relative z-10" />                                                                                                      
+              </div>                                                                                                                                                                                                                              
+              <div class="bg-white rounded-b-2xl p-6 border border-black/5">                                                                                                                                                                      
+                <h3 class="text-sm font-bold text-deep-black mb-1">Versão Positiva — Clara</h3>                                                                                                                                                   
+                <p class="text-xs text-deep-black/50 leading-relaxed">Uso ideal para fundos brancos, papelaria timbrada de escritório e materiais impressos.</p>                                                                                  
+              </div>                                                                                                                                                                                                                              
+            </div>                                                                                                                                                                                                                                
+          </div>                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                  
+          <!-- Grid secundário: Ícones e Perfis de Redes Sociais -->                                                                                                                                                                              
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">                                                                                                                                                                                     
+                                                                                                                                                                                                                                                  
+            <!-- Bloco 1: Ícones de Marca -->                                                                                                                                                                                                     
+            <div class="bg-white rounded-3xl p-8 border border-black/5 flex flex-col justify-between">                                                                                                                                            
+              <div>                                                                                                                                                                                                                               
+                <div class="flex items-center gap-3 mb-4">                                                                                                                                                                                        
+                  <div class="w-1.5 h-6 bg-red-supreme rounded-full"></div>                                                                                                                                                                       
+                  <h4 class="text-lg font-bold text-deep-black font-sans">Ícone Reduzido</h4>                                                                                                                                                     
+                </div>                                                                                                                                                                                                                            
+                <p class="text-sm text-deep-black/60 mb-8 leading-relaxed">                                                                                                                                                                       
+                  O ícone isolado funciona como a assinatura minimalista da Innker. É a opção ideal para representação em favicons de navegadores, botões pequenos e interfaces móveis.                                                           
+                </p>                                                                                                                                                                                                                              
+              </div>                                                                                                                                                                                                                              
+              <div class="grid grid-cols-3 gap-4">                                                                                                                                                                                                
+                <div class="bg-red-supreme rounded-2xl p-4 flex flex-col items-center justify-center aspect-square">                                                                                                                              
+                  <img src="/Icon-Main.svg" alt="Ícone Innker" class="w-12 h-12 object-contain" />
+                  <span class="text-[8px] font-semibold text-natural-white/50 uppercase mt-3">Principal</span>
+                </div>
+                <div class="bg-deep-black rounded-2xl p-4 flex flex-col items-center justify-center aspect-square">
+                  <img src="/Icon-Variation-2.svg" alt="Ícone Innker Escuro" class="w-12 h-12 object-contain" />
+                  <span class="text-[8px] font-semibold text-natural-white/50 uppercase mt-3">Escuro</span>
+                </div>
+                <div class="bg-[#e9e9e9] rounded-2xl p-4 flex flex-col items-center justify-center aspect-square border border-black/5">
+                  <img src="/Icon-Variation-1.svg" alt="Ícone Innker Claro" class="w-12 h-12 object-contain" />
+                  <span class="text-[8px] font-semibold text-deep-black/50 uppercase mt-3">Claro</span>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Bloco 2: Perfis/Avatares de Rede Social -->
+            <div class="bg-white rounded-3xl p-8 border border-black/5 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-3 mb-4">
+                  <div class="w-1.5 h-6 bg-red-supreme rounded-full"></div>
+                  <h4 class="text-lg font-bold text-deep-black font-sans">Avatar de Perfis</h4>
+                </div>
+                <p class="text-sm text-deep-black/60 mb-8 leading-relaxed">
+                  Variações circulares prontas com margem de segurança para aplicação em avatares e imagens de perfil em redes como LinkedIn, GitHub e Instagram.
+                </p>
+              </div>
+              <div class="grid grid-cols-3 gap-4">
+                <div class="bg-red-supreme rounded-2xl p-4 flex flex-col items-center justify-center aspect-square">
+                  <img src="/Profile-Main.svg" alt="Avatar Innker" class="w-12 h-12 object-contain rounded-full" />
+                  <span class="text-[8px] font-semibold text-natural-white/50 uppercase mt-3">Social Red</span>
+                </div>
+                <div class="bg-deep-black rounded-2xl p-4 flex flex-col items-center justify-center aspect-square">
+                  <img src="/Profile-Variation-2.svg" alt="Avatar Innker Escuro" class="w-12 h-12 object-contain rounded-full" />
+                  <span class="text-[8px] font-semibold text-natural-white/50 uppercase mt-3">Social Black</span>
+                </div>
+                <div class="bg-[#e9e9e9] rounded-2xl p-4 flex flex-col items-center justify-center aspect-square border border-black/5">
+                  <img src="/Profile-Variation-1.svg" alt="Avatar Innker Claro" class="w-12 h-12 object-contain rounded-full" />
+                  <span class="text-[8px] font-semibold text-deep-black/50 uppercase mt-3">Social Light</span>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SEÇÃO 02: CORES ==================== -->                                                                                                                                                                          
+      <section id="colors" class="bg-deep-black px-8 py-24 md:px-16 border-t border-red-supreme/15">                                                                                                                                              
+        <div class="max-w-[1200px] mx-auto">                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                  
+          <!-- Cabeçalho da Seção -->                                                                                                                                                                                                             
+          <div class="mb-16">                                                                                                                                                                                                                     
+            <div class="flex items-center gap-3 mb-4">                                                                                                                                                                                            
+              <span class="text-[11px] font-semibold tracking-[0.18em] uppercase text-natural-white/30">02</span>                                                                                                                                 
+              <div class="w-6 h-[1px] bg-red-supreme"></div>                                                                                                                                                                                      
+              <span class="text-[11px] font-semibold tracking-[0.18em] uppercase text-red-supreme">Cores</span>                                                                                                                                   
+            </div>                                                                                                                                                                                                                                
+            <h2 class="text-3xl md:text-5xl font-extrabold text-natural-white leading-none mb-4 tracking-tight">                                                                                                                                  
+              Paleta de Cores Oficial                                                                                                                                                                                                             
+            </h2>                                                                                                                                                                                                                                 
+            <p class="text-base text-natural-white/50 leading-relaxed max-w-[560px]">                                                                                                                                                             
+              A paleta cromática da Innker reflete uma identidade tecnológica, premium e decidida. Utilize estritamente os valores descritos abaixo para garantir o alinhamento da marca em todas as plataformas.                                 
+            </p>                                                                                                                                                                                                                                  
+          </div>                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                  
+          <!-- Grid de Swatches de Cores -->                                                                                                                                                                                                      
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-0.5 rounded-3xl overflow-hidden mb-20">                                                                                                                                                 
+            @for (color of colors; track color.hex) {                                                                                                                                                                                             
+              <div [ngClass]="[color.classBg, color.classText]"                                                                                                                                                                                   
+                   class="p-10 flex flex-col justify-between min-h-[320px] transition-transform duration-300 hover:scale-[1.01] relative"                                                                                                         
+                   [class.border]="color.hasBorder"                                                                                                                                                                                               
+                   [class.border-black/5]="color.hasBorder">                                                                                                                                                                                      
+                <div></div>                                                                                                                                                                                                                       
+                <div>                                                                                                                                                                                                                             
+                  <span class="text-[9px] font-bold tracking-widest uppercase opacity-50 block mb-2">Cor Oficial</span>                                                                                                                           
+                  <h3 class="text-2xl font-extrabold mb-4 tracking-tight">{{ color.name }}</h3>                                                                                                                                                   
+                  <div class="text-3xl font-light mb-6 tracking-tight">{{ color.hex }}</div>                                                                                                                                                      
+                                                                                                                                                                                                                                                  
+                  <!-- Detalhes de Produção/Mídia -->                                                                                                                                                                                             
+                  <div class="space-y-1.5 pt-6 border-t border-current/15 text-xs opacity-70 font-mono">                                                                                                                                          
+                    <div>{{ color.rgb }}</div>                                                                                                                                                                                                    
+                    <div>{{ color.cmyk }}</div>                                                                                                                                                                                                   
+                    <div>{{ color.pantone }}</div>                                                                                                                                                                                                
+                  </div>                                                                                                                                                                                                                          
+                  <p class="text-xs mt-6 leading-relaxed opacity-85">{{ color.role }}</p>                                                                                                                                                         
+                </div>                                                                                                                                                                                                                            
+              </div>                                                                                                                                                                                                                              
+            }                                                                                                                                                                                                                                     
+          </div>                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                  
+          <!-- Combinações e Relações de Contraste -->                                                                                                                                                                                            
+          <div class="bg-white/5 rounded-3xl p-8 border border-white/5">                                                                                                                                                                          
+            <div class="flex items-center gap-3 mb-6">                                                                                                                                                                                            
+              <div class="w-1.5 h-6 bg-red-supreme rounded-full"></div>                                                                                                                                                                           
+              <h4 class="text-lg font-bold text-natural-white">Combinações e Relações de Contraste</h4>                                                                                                                                           
+            </div>                                                                                                                                                                                                                                
+            <p class="text-sm text-natural-white/60 mb-8 leading-relaxed max-w-[700px]">                                                                                                                                                          
+              Para garantir acessibilidade e legibilidade visual de acordo com os padrões da web, utilize as combinações recomendadas de plano de fundo (Background) e texto (Foreground) especificadas a seguir:                                 
+            </p>                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                  
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">                                                                                                                                                                    
+              @for (comb of combinations; track comb.label) {                                                                                                                                                                                     
+                <div [ngClass]="[comb.bg, comb.fg]" class="p-6 rounded-2xl flex flex-col justify-between min-h-[140px] border border-white/5">                                                                                                    
+                  <div class="flex justify-between items-center mb-4">                                                                                                                                                                            
+                    <span class="text-xs font-bold uppercase tracking-wider">{{ comb.label }}</span>                                                                                                                                              
+                    <span class="text-[10px] bg-white/10 px-2 py-0.5 rounded font-mono">Aprovado</span>                                                                                                                                           
+                  </div>                                                                                                                                                                                                                          
+                  <p class="text-xs leading-relaxed opacity-85">{{ comb.note }}</p>                                                                                                                                                               
+                </div>                                                                                                                                                                                                                            
+              }                                                                                                                                                                                                                                   
+            </div>                                                                                                                                                                                                                                
+          </div>                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                  
+        </div>                                                                                                                                                                                                                                    
+      </section>                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                  
+      <!-- ==================== SEÇÃO 03: TIPOGRAFIA ==================== -->                                                                                                                                                                     
+      <section id="typography" class="bg-natural-white px-8 py-24 md:px-16 border-t border-black/5">                                                                                                                                              
+        <div class="max-w-[1200px] mx-auto">                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                  
+          <!-- Cabeçalho da Seção -->                                                                                                                                                                                                             
+          <div class="mb-16">                                                                                                                                                                                                                     
+            <div class="flex items-center gap-3 mb-4">                                                                                                                                                                                            
+              <span class="text-[11px] font-semibold tracking-[0.18em] uppercase text-deep-black/35">03</span>                                                                                                                                    
+              <div class="w-6 h-[1px] bg-red-supreme"></div>                                                                                                                                                                                      
+              <span class="text-[11px] font-semibold tracking-[0.18em] uppercase text-red-supreme">Tipografia</span>                                                                                                                              
+            </div>                                                                                                                                                                                                                                
+            <h2 class="text-3xl md:text-5xl font-extrabold text-deep-black leading-none mb-4 tracking-tight">                                                                                                                                     
+              Sistema Tipográfico                                                                                                                                                                                                                 
+            </h2>                                                                                                                                                                                                                                 
+            <p class="text-base text-deep-black/55 leading-relaxed max-w-[560px]">                                                                                                                                                                
+              A Innker utiliza a Montserrat como sua tipografia oficial exclusiva. Essa decisão simplifica o sistema tipográfico, garantindo uma comunicação digital limpa, consistente e visualmente imponente.                                  
+            </p>                                                                                                                                                                                                                                  
+          </div>                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                  
+          <!-- Espécime Tipográfico Gigante -->                                                                                                                                                                                                   
+          <div class="bg-deep-black rounded-3xl p-10 md:p-16 mb-8 relative overflow-hidden flex flex-col justify-between min-h-[380px] md:min-h-[440px]">                                                                                         
+            <!-- Textura de Grid -->                                                                                                                                                                                                              
+            <div class="absolute inset-0 opacity-[0.02]" style="background-image: linear-gradient(var(--color-red-supreme) 1px, transparent 1px), linear-gradient(90deg, var(--color-red-supreme) 1px, transparent 1px); background-size: 32px    
+  32px;"></div>                                                                                                                                                                                                                                   
+                                                                                                                                                                                                                                                  
+            <!-- Letras gigantes de background -->                                                                                                                                                                                                
+            <div class="absolute right-0 bottom-0 text-[180px] md:text-[320px] font-black text-red-supreme/10 leading-none select-none tracking-tighter">                                                                                         
+              Aa                                                                                                                                                                                                                                  
+            </div>                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                  
+            <div class="relative z-10 flex justify-between items-start flex-wrap gap-4 mb-12">                                                                                                                                                    
+              <div>                                                                                                                                                                                                                               
+                <span class="text-[10px] font-semibold tracking-[0.15em] text-red-supreme uppercase block mb-1">Família Única</span>                                                                                                              
+                <h3 class="text-3xl md:text-5xl font-black text-natural-white tracking-tight">Montserrat</h3>                                                                                                                                     
+              </div>
+              <span class="text-[10px] bg-white/10 border-red-supreme/30 text-natural-white px-4 py-2 rounded font-mono uppercase">Google Fonts</span>
+            </div>
+  
+            <div class="relative z-10 max-w-[600px]">
+              <div class="text-4xl md:text-6xl font-light text-natural-white mb-6 leading-none tracking-tight break-words">
+                Aa Bb Cc Dd Ee Ff Gg 1 2 3 4 5
+              </div>
+              <p class="text-sm text-natural-white/60 leading-relaxed font-light">
+                Uma fonte sans-serif geométrica contemporânea inspirada nos antigos letreiros e cartazes do bairro de Montserrat, em Buenos Aires. Traz solidez, legibilidade e dinamismo gráfico para a Innker.
+              </p>
+            </div>
+          </div>
+  
+          <!-- Pesos Recomendados e Casos de Uso -->
+          <div class="bg-white rounded-3xl p-8 border border-black/5">
+            <div class="flex items-center gap-3 mb-8">
+              <div class="w-1.5 h-6 bg-red-supreme rounded-full"></div>
+              <h4 class="text-lg font-bold text-deep-black">Hierarquia de Pesos e Estilos</h4>
+            </div>
+            
+            <div class="space-y-6">
+              @for (font of fontWeights; track font.weight) {
+                <div class="flex flex-col md:flex-row md:items-center justify-between py-4 border-b border-black/5 last:border-b-0 gap-2 md:gap-8">
+                  <div class="flex items-baseline gap-4 md:w-1/3">
+                    <span class="text-xs text-deep-black/35 font-mono">{{ font.weight }}</span>
+                    <span class="text-lg font-bold text-deep-black">{{ font.label }}</span>
+                  </div>
+                  <div class="flex-1">
+                    <!-- Injeta dinamicamente o font-weight correspondente usando Angular -->
+                    <span class="text-base text-deep-black block md:inline" [style.font-weight]="font.weight">
+                      Desenvolvimento de Software sob medida.
+                    </span>
+                  </div>
+                  <div class="md:w-1/4 text-xs text-deep-black/50 leading-relaxed">
+                    {{ font.desc }}
+                  </div>
+                </div>
+              }
+            </div>
+          </div>
+  
+        </div>
+      </section>
+
+      <!-- ==================== SEÇÃO 04: DOS & DON'TS ==================== -->                                                                                                                                                                   
+      <section id="dos-donts" class="bg-deep-black px-8 py-24 md:px-16 border-t border-red-supreme/15">                                                                                                                                           
+        <div class="max-w-[1200px] mx-auto">                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                  
+          <!-- Cabeçalho da Seção -->                                                                                                                                                                                                             
+          <div class="mb-16">                                                                                                                                                                                                                     
+            <div class="flex items-center gap-3 mb-4">                                                                                                                                                                                            
+              <span class="text-[11px] font-semibold tracking-[0.18em] uppercase text-natural-white/30">04</span>                                                                                                                                 
+              <div class="w-6 h-[1px] bg-red-supreme"></div>                                                                                                                                                                                      
+              <span class="text-[11px] font-semibold tracking-[0.18em] uppercase text-red-supreme">Uso do Logotipo</span>                                                                                                                         
+            </div>                                                                                                                                                                                                                                
+            <h2 class="text-3xl md:text-5xl font-extrabold text-natural-white leading-none mb-4 tracking-tight">                                                                                                                                  
+              O que Fazer e Não Fazer                                                                                                                                                                                                             
+            </h2>                                                                                                                                                                                                                                 
+            <p class="text-base text-natural-white/50 leading-relaxed max-w-[560px]">                                                                                                                                                             
+              O logotipo da Innker representa a seriedade e o DNA da nossa empresa. Siga rigorosamente as diretrizes de aplicação abaixo para manter a consistência da marca.                                                                     
+            </p>                                                                                                                                                                                                                                  
+          </div>                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                  
+          <!-- Grid de Proibições (Incorreto) -->                                                                                                                                                                                                 
+          <div class="mb-16 animate-fade-in">                                                                                                                                                                                                     
+            <div class="flex items-center gap-3 mb-8">                                                                                                                                                                                            
+              <div class="w-8 h-8 rounded-full bg-red-supreme text-white flex items-center justify-center font-bold text-sm">✗</div>                                                                                                              
+              <h3 class="text-xl font-bold text-natural-white">Proibições — Nunca faça isso</h3>                                                                                                                                                  
+            </div>                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                  
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">                                                                                                                                                                                   
+              @for (rule of dontRules; track rule.title) {                                                                                                                                                                                        
+                <div class="bg-white/5 rounded-2xl overflow-hidden border border-red-supreme/10 flex flex-col justify-between">                                                                                                                   
+                  <!-- Visual com distorção por classes Tailwind -->                                                                                                                                                                              
+                  <div [ngClass]="rule.bgClass || 'bg-red-supreme/5'" class="p-10 min-h-[220px] flex items-center justify-center relative overflow-hidden">                                                                                       
+                    <span class="absolute top-4 left-4 text-[10px] font-mono uppercase bg-red-supreme text-natural-white px-2 py-0.5 rounded flex items-center gap-1.5">                                                                          
+                      <span>✗</span> Incorreto                                                                                                                                                                                                    
+                    </span>                                                                                                                                                                                                                       
+                    <img [src]="rule.src" [class]="rule.imgClass" class="w-full max-w-[180px] object-contain transition-all duration-300" alt="Exemplo incorreto" />                                                                              
+                    <div class="absolute inset-0 flex items-center justify-center text-red-supreme/25 text-7xl font-bold select-none pointer-events-none">✗</div>                                                                                 
+                  </div>                                                                                                                                                                                                                          
+                  <!-- Informações -->                                                                                                                                                                                                            
+                  <div class="p-6 border-t-2 border-red-supreme bg-white/5">                                                                                                                                                                      
+                    <h4 class="text-sm font-bold text-red-supreme mb-1">{{ rule.title }}</h4>                                                                                                                                                     
+                    <p class="text-xs text-natural-white/50 leading-relaxed">{{ rule.desc }}</p>                                                                                                                                                  
+                  </div>                                                                                                                                                                                                                          
+                </div>                                                                                                                                                                                                                            
+              }                                                                                                                                                                                                                                   
+            </div>                                                                                                                                                                                                                                
+          </div>                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                  
+          <!-- Grid de Recomendações (Correto) -->                                                                                                                                                                                                
+          <div>                                                                                                                                                                                                                                   
+            <div class="flex items-center gap-3 mb-8">                                                                                                                                                                                            
+              <div class="w-8 h-8 rounded-full bg-green-600 text-white flex items-center justify-center font-bold text-sm">✓</div>                                                                                                                
+              <h3 class="text-xl font-bold text-natural-white">Recomendações — Aplicação Correta</h3>                                                                                                                                             
+            </div>                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                  
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">                                                                                                                                                                                   
+              @for (rule of doRules; track rule.title) {                                                                                                                                                                                          
+                <div class="bg-white/5 rounded-2xl overflow-hidden border border-green-600/10 flex flex-col justify-between">                                                                                                                     
+                  <!-- Visual com grid ou fundo escuro/claro real -->                                                                                                                                                                             
+                  <div [ngClass]="rule.bgClass || 'bg-white/5'" class="p-10 min-h-[220px] flex items-center justify-center relative overflow-hidden">                                                                                             
+                    <!-- Grid de marcação técnica opcional se hasGrid for true -->                                                                                                                                                                
+                    @if (rule.hasGrid) {                                                                                                                                                                                                          
+                      <div class="absolute inset-0 opacity-[0.08]" style="background-image: linear-gradient(rgba(128,128,128,1) 1px, transparent 1px), linear-gradient(90deg, rgba(128,128,128,1) 1px, transparent 1px); background-size: 16px    
+  16px;"></div>                                                                                                                                                                                                                                   
+                    }                                                                                                                                                                                                                             
+                    <span class="absolute top-4 left-4 text-[10px] font-mono uppercase bg-green-600 text-natural-white px-2 py-0.5 rounded flex items-center gap-1.5">                                                                            
+                      <span>✓</span> Correto                                                                                                                                                                                                      
+                    </span>                                                                                                                                                                                                                       
+                    <img [src]="rule.src" [class]="rule.imgClass" class="w-full max-w-[180px] object-contain" alt="Exemplo correto" />                                                                                                            
+                  </div>                                                                                                                                                                                                                          
+                  <!-- Informações -->                                                                                                                                                                                                            
+                  <div class="p-6 border-t-2 border-green-600 bg-white/5">                                                                                                                                                                        
+                    <h4 class="text-sm font-bold text-green-500 mb-1">{{ rule.title }}</h4>                                                                                                                                                       
+                    <p class="text-xs text-natural-white/50 leading-relaxed">{{ rule.desc }}</p>                                                                                                                                                  
+                  </div>                                                                                                                                                                                                                          
+                </div>                                                                                                                                                                                                                            
+              }                                                                                                                                                                                                                                   
+            </div>                                                                                                                                                                                                                                
+          </div>                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                  
+        </div>                                                                                                                                                                                                                                    
+      </section>                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                  
+      <!-- ==================== SEÇÃO 05: DIGITAL / BOTÕES UI ==================== -->                                                                                                                                                            
+      <section id="digital" class="bg-natural-white px-8 py-24 md:px-16 border-t border-black/5">                                                                                                                                                 
+        <div class="max-w-[1200px] mx-auto">                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                  
+          <!-- Cabeçalho da Seção -->                                                                                                                                                                                                             
+          <div class="mb-16">                                                                                                                                                                                                                     
+            <div class="flex items-center gap-3 mb-4">                                                                                                                                                                                            
+              <span class="text-[11px] font-semibold tracking-[0.18em] uppercase text-deep-black/35">05</span>                                                                                                                                    
+              <div class="w-6 h-[1px] bg-red-supreme"></div>                                                                                                                                                                                      
+              <span class="text-[11px] font-semibold tracking-[0.18em] uppercase text-red-supreme">Interface Digital</span>                                                                                                                       
+            </div>                                                                                                                                                                                                                                
+            <h2 class="text-3xl md:text-5xl font-extrabold text-deep-black leading-none mb-4 tracking-tight">                                                                                                                                     
+              Botões e Ações de Interface                                                                                                                                                                                                         
+            </h2>                                                                                                                                                                                                                                 
+            <p class="text-base text-deep-black/55 leading-relaxed max-w-[560px]">                                                                                                                                                                
+              Para garantir a consistência das interações do usuário, definimos quatro variações principais de botões. Passe o mouse para interagir e verifique o comportamento real.                                                             
+            </p>                                                                                                                                                                                                                                  
+          </div>                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                  
+          <!-- Grid de Componentes de Botão (Interativos) -->                                                                                                                                                                                     
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">                                                                                                                                                                                     
+            @for (spec of buttonSpecs; track spec.role) {                                                                                                                                                                                         
+              <div class="flex flex-col gap-4">                                                                                                                                                                                                   
+                                                                                                                                                                                                                                                  
+                <!-- Visualizador Interativo com efeito de hover -->                                                                                                                                                                              
+                <div class="bg-white rounded-2xl p-10 border border-black/5 flex items-center justify-center min-h-[160px]">                                                                                                                      
+                  <!-- Injeta dinamicamente as classes utilitárias do Tailwind no botão -->                                                                                                                                                       
+                  <button [className]="spec.class + ' px-8 py-3.5 rounded-lg text-sm font-semibold tracking-wider font-sans transition-all duration-200 cursor-pointer active:scale-95'">                                                         
+                    {{ spec.label }}                                                                                                                                                                                                              
+                  </button>                                                                                                                                                                                                                       
+                </div>                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                  
+                <!-- Tabela com Especificações Técnicas -->                                                                                                                                                                                       
+                <div class="bg-white rounded-2xl border border-black/5 overflow-hidden">                                                                                                                                                          
+                  <div class="bg-deep-black px-5 py-3.5 flex justify-between items-center text-natural-white">                                                                                                                                    
+                    <span class="text-xs font-bold uppercase tracking-wider">{{ spec.role }}</span>                                                                                                                                               
+                    <span class="text-[9px] bg-white/10 px-2 py-0.5 rounded font-mono text-natural-white/80">Tailwind v4</span>                                                                                                                   
+                  </div>                                                                                                                                                                                                                          
+                  <div class="p-5 space-y-3.5 text-xs text-deep-black/70">                                                                                                                                                                        
+                    <div class="flex justify-between py-1 border-b border-black/5">                                                                                                                                                               
+                      <span class="font-bold">Efeito Hover:</span>                                                                                                                                                                                
+                      <span class="font-mono text-deep-black/60">{{ spec.hover }}</span>                                                                                                                                                          
+                    </div>                                                                                                                                                                                                                        
+                    <div class="py-1">                                                                                                                                                                                                            
+                      <div class="font-bold mb-1.5">Classes Utilizadas:</div>                                                                                                                                                                     
+                      <pre class="bg-natural-white p-3 rounded font-mono text-[10px] text-red-supreme overflow-x-auto whitespace-pre-wrap select-all">{{ spec.class }}</pre>                                                                      
+                    </div>                                                                                                                                                                                                                        
+                    <p class="text-deep-black/50 leading-relaxed pt-2 border-t border-black/5">{{ spec.desc }}</p>                                                                                                                                
+                  </div>                                                                                                                                                                                                                          
+                </div>                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                  
+              </div>                                                                                                                                                                                                                              
+            }                                                                                                                                                                                                                                     
+          </div>                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                  
+        </div>                                                                                                                                                                                                                                    
+      </section>                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                  
+      <!-- ==================== RODAPÉ (FOOTER) ==================== -->                                                                                                                                                                          
+      <footer class="bg-deep-black border-t border-red-supreme/25 relative overflow-hidden">                                                                                                                                                      
+                                                                                                                                                                                                                                                  
+        <!-- Textura de Grid -->                                                                                                                                                                                                                  
+        <div class="absolute inset-0 opacity-[0.02]" style="background-image: linear-gradient(var(--color-red-supreme) 1px, transparent 1px), linear-gradient(90deg, var(--color-red-supreme) 1px, transparent 1px); background-size: 48px 48px;  
+  "></div>
+        
+        <!-- Faixa vermelha superior decorativa -->
+        <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-red-supreme via-red-supreme/30 to-transparent"></div>
+  
+        <div class="relative z-10 max-w-[1200px] mx-auto px-8 py-14 md:px-16 grid grid-cols-1 md:grid-cols-3 items-center gap-8 md:gap-12 text-center md:text-left">
+          
+          <!-- Esquerda: Créditos de Mentoria -->
+          <div class="flex flex-col gap-1.5">
+            <span class="text-[9px] font-semibold tracking-wider text-natural-white/30 uppercase">Desenvolvido por</span>
+            <a href="https://randygomes.dev.br" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="text-sm font-semibold text-red-supreme hover:opacity-80 transition-opacity">
+              Randy Gomes ↗
+            </a>
+          </div>
+  
+          <!-- Centro: Detalhes do Manual -->
+          <div class="flex flex-col gap-1 text-center">
+            <span class="text-xs font-semibold text-natural-white/60 tracking-wider">Manual de Identidade Visual</span>
+            <span class="text-[10px] text-natural-white/30 tracking-wider">Uso Interno Reservado · 2026</span>
+          </div>
+  
+          <!-- Direita: Logo Miniatura -->
+          <div class="flex flex-col md:flex-row items-center md:justify-end gap-4">
+            <div class="text-center md:text-right">
+              <span class="text-[9px] font-semibold tracking-wider text-natural-white/30 uppercase block">Plataforma</span>
+              <span class="text-[10px] text-natural-white/40 font-mono">Angular 21 + Tailwind v4</span>
+            </div>
+            <img src="/Icon-Main.svg" alt="Innker Logo" class="h-9 w-auto opacity-75 object-contain" />
+          </div>
+  
+        </div>
+  
+        <!-- Barra de Direitos Autorais -->
+        <div class="relative z-10 border-t border-white/5 py-6 px-8 text-center max-w-[1200px] mx-auto">
+          <span class="text-[10px] text-natural-white/20 tracking-wider">
+            © 2026 Innker Tecnologia LTDA · Todos os direitos reservados
+          </span>
+        </div>
+      </footer>
+
+</div>
