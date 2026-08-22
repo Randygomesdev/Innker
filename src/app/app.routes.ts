@@ -10,6 +10,14 @@ export const routes: Routes = [
         loadComponent: () => import('./brand-manual/brand-manual').then(m => m.BrandManual),
     },
     {
+        path: 'privacy',
+        loadComponent: () => import('./privacy/privacy').then(m => m.Privacy),
+    },
+    {
+        path: 'terms',
+        loadComponent: () => import('./terms/terms').then(m => m.Terms),
+    },
+    {
         path: '**',
         redirectTo: '',
     }
