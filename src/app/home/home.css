@@ -7,7 +7,7 @@
 .project-copy { padding: 40px; }
 .project-logo { display: block; object-fit: contain; object-position: left; margin: 26px 0; max-width: 100%; }
 .project-copy h3 { font-size: clamp(23px, 2.2vw, 32px); font-weight: 700; line-height: 1.25; letter-spacing: -.025em; }
-.project-copy p, .project-next p, .process-grid p { color: #b8b8b8; font-size: 15px; line-height: 1.8; margin: 20px 0; }
+.project-copy p, .process-grid p { color: #b8b8b8; font-size: 15px; line-height: 1.8; margin: 20px 0; }
 .project-capabilities { list-style: none; padding: 0; margin: 24px 0; font-size: 14px; }
 .project-capabilities li { padding: 10px 0 10px 18px; border-bottom: 1px solid #ffffff12; position: relative; }
 .project-capabilities li::before { content: ''; position: absolute; left: 0; top: 18px; width: 5px; height: 5px; background: #ff6268; }
@@ -17,10 +17,6 @@
 .project-visual { margin: 0; min-width: 0; display: flex; flex-direction: column; justify-content: center; background: #171313; overflow: hidden; }
 .project-visual img { width: 100%; height: auto; }
 .project-visual figcaption { padding: 24px; text-align: center; font-size: 11px; color: #aaa; letter-spacing: .06em; }
-.project-next { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; padding: 44px 0; border-bottom: 1px solid #ffffff26; }
-.project-next h3 { margin-top: 22px; font-size: clamp(38px, 5vw, 70px); font-weight: 800; letter-spacing: -.04em; }
-.project-next h3 span { color: #606060; margin-left: 30px; font-weight: 400; }
-.project-status { display: inline-block; border: 1px solid #ffffff30; padding: 6px 10px; font-size: 11px; color: #ccc; }
 .text-link { display: inline-flex; gap: 20px; color: #ff6268; font-weight: 700; font-size: 14px; }
 .text-link:hover { text-decoration: underline; text-underline-offset: 5px; }
 .process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
@@ -36,10 +32,9 @@
 :host a:focus-visible, :host summary:focus-visible { outline: 3px solid #ff9397; outline-offset: 5px; }
 @media (max-width: 800px) {
   .portfolio-section { padding: 64px 6%; scroll-margin-top: 64px; }
-  .project-feature, .project-next, .about-section, .process-grid { grid-template-columns: 1fr; gap: 28px; }
+  .project-feature, .about-section, .process-grid { grid-template-columns: 1fr; gap: 28px; }
   .project-feature { gap: 0; }
   .project-copy { padding: 28px 22px; }
-  .project-next h3 { margin-top: 12px; }
 }
 
 .hero-art {
@@ -82,3 +77,18 @@
     width: 94%;
   }
 }
+.project-feature + .project-feature { margin-top: 32px; }
+.project-wordmark { display: flex; align-items: center; gap: 12px; margin: 26px 0; font-size: clamp(30px, 3.2vw, 46px); font-weight: 800; letter-spacing: -.04em; line-height: 1.2; }
+.wordmark-dot { color: #ff6268; }
+.easypet-visual { background: #142c42; }
+.easypet-visual > a { display: flex; justify-content: center; padding: 32px; }
+.easypet-visual img { max-width: 430px; aspect-ratio: 1; object-fit: contain; }
+.easypet-visual figcaption { color: #c4d4e2; }
+.portfolio-visual { background: radial-gradient(ellipse at 100% 0, #4b1118, transparent 70%), #171313; }
+.portfolio-cover { display: flex; flex-direction: column; justify-content: center; gap: 36px; padding: 52px; min-height: 420px; }
+.portfolio-cover-label { color: #d7a9ac; font-size: 10px; letter-spacing: .15em; }
+.portfolio-cover-name { font-size: clamp(52px, 6vw, 90px); font-weight: 800; line-height: .95; letter-spacing: -.06em; }
+.portfolio-cover-name > span { color: #ed1c24; }
+.portfolio-cover-url { display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid #ffffff30; padding-top: 24px; font-size: 13px; overflow-wrap: anywhere; }
+.portfolio-cover:hover .portfolio-cover-url { color: #ff9397; }
+@media (max-width: 800px) { .portfolio-cover { padding: 32px; min-height: 320px; } }
