@@ -1,0 +1,219 @@
+<a class="skip" href="/easypet#conteudo">Pular para o conteúdo</a>
+<div class="easypet-page">
+  <header class="site-header">
+    <a class="brand" href="/easypet" aria-label="Easypet, apresentação"
+      ><img src="/projects/easypet/LogoEasypet.svg" width="36" height="36" alt="" />Easypet</a
+    >
+    <a href="/#projetos" class="back-link">← Voltar à Innker</a>
+  </header>
+  <main id="conteudo" tabindex="-1">
+    <section class="ep-hero">
+      <div class="hero-copy">
+        <span class="eyebrow">Um projeto Innker · Em desenvolvimento</span>
+        <h1>Mais cuidado.<br />Mais conexão.<br /><em>Mais Easypet.</em></h1>
+        <p>
+          Uma plataforma para aproximar tutores, pets e prestadores de serviços. Do agendamento à
+          organização da rotina de quem cuida.
+        </p>
+        <a class="primary-link" href="/easypet#demonstracao"
+          >Explore o sistema <span aria-hidden="true">↓</span></a
+        >
+        <small>Prévia do projeto. O sistema ainda não está disponível para uso público.</small>
+      </div>
+      <div class="hero-image">
+        <img
+          src="/projects/easypet/pet-3d-illustration-transparent.png"
+          alt="Ilustração de pets da identidade visual do Easypet"
+          fetchpriority="high"
+        /><span>Conectados pelo cuidado.</span>
+      </div>
+    </section>
+    <section class="intro" aria-labelledby="intro-title">
+      <div>
+        <span class="eyebrow">Um ecossistema de cuidado</span>
+        <h2 id="intro-title">Bom para quem ama.<br />Bom para quem cuida.</h2>
+      </div>
+      <p>
+        O projeto reúne serviços como consultas, banho e tosa, passeios e hospedagem. Para os
+        parceiros, organiza o trabalho com agenda, colaboradores, serviços e pacotes em um mesmo
+        ambiente.
+      </p>
+    </section>
+    <section id="demonstracao" class="demo-section" aria-labelledby="demo-title">
+      <div class="demo-heading">
+        <div>
+          <span class="eyebrow">Por dentro do Easypet</span>
+          <h2 id="demo-title">Explore o painel do parceiro.</h2>
+        </div>
+        <p>Selecione uma área para conhecer a proposta do sistema.</p>
+      </div>
+      <div class="demo-notice">
+        <strong>Demonstração interativa</strong
+        ><span
+          >Interface adaptada das telas do projeto, com nomes, valores e agendamentos fictícios.
+          Nenhuma ação realiza reservas ou pagamentos.</span
+        >
+      </div>
+      <div class="app-shell">
+        <nav class="app-nav" aria-label="Áreas da demonstração">
+          <span class="app-brand">Easypet<span>Área do parceiro</span></span>
+          @for (view of views; track view) {
+            <button
+              type="button"
+              [class.selected]="activeView() === view"
+              [attr.aria-pressed]="activeView() === view"
+              aria-controls="demo-content"
+              (click)="activeView.set(view)"
+            >
+              {{ view }}
+            </button>
+          }
+          <span class="demo-account">Pet Care Studio<small>Estabelecimento fictício</small></span>
+        </nav>
+        <div id="demo-content" class="app-content" aria-live="polite">
+          <div class="app-heading">
+            <div>
+              <span class="app-eyebrow">Pet Care Studio / Demonstração</span>
+              <h3>{{ activeView() }}</h3>
+            </div>
+            <span class="preview-badge">Prévia</span>
+          </div>
+          @if (activeView() === 'Visão geral') {
+            <p class="app-description">Uma visão da rotina e dos resultados do estabelecimento.</p>
+            <div class="ep-stats">
+              <article>
+                <span>Agendamentos hoje</span><strong>4</strong><small>Dia ilustrativo</small>
+              </article>
+              <article>
+                <span>Receita do mês</span><strong>R$ 8.240</strong><small>Valor fictício</small>
+              </article>
+              <article>
+                <span>Colaboradores ativos</span><strong>2</strong><small>Equipe de exemplo</small>
+              </article>
+            </div>
+            <div class="dashboard-grid">
+              <article class="panel">
+                <h4>Agendamentos por dia</h4>
+                <p>Semana de exemplo</p>
+                <div
+                  class="bars"
+                  role="img"
+                  aria-label="Agendamentos fictícios: segunda 6, terça 9, quarta 5, quinta 8, sexta 4"
+                >
+                  <div><span style="height: 60%">6</span><small>Seg</small></div>
+                  <div><span style="height: 90%">9</span><small>Ter</small></div>
+                  <div><span style="height: 50%">5</span><small>Qua</small></div>
+                  <div><span style="height: 80%">8</span><small>Qui</small></div>
+                  <div><span style="height: 40%">4</span><small>Sex</small></div>
+                </div>
+              </article>
+              <article class="panel">
+                <h4>Status dos agendamentos</h4>
+                <div class="status-row"><span>Confirmados</span><strong>2</strong></div>
+                <div class="status-row"><span>Pendentes</span><strong>1</strong></div>
+                <div class="status-row"><span>Finalizados</span><strong>1</strong></div>
+                <button
+                  class="inline-button"
+                  type="button"
+                  (click)="activeView.set('Agendamentos')"
+                >
+                  Explorar agenda →
+                </button>
+              </article>
+            </div>
+          } @else if (activeView() === 'Agendamentos') {
+            <p class="app-description">Acompanhe cada atendimento, do pedido à conclusão.</p>
+            <div class="filters" aria-label="Filtrar agendamentos por status">
+              @for (status of statuses; track status) {
+                <button
+                  type="button"
+                  [class.selected]="filter() === status"
+                  [attr.aria-pressed]="filter() === status"
+                  (click)="filter.set(status)"
+                >
+                  {{ status }}
+                </button>
+              }
+            </div>
+            <p class="result-count">
+              {{ filteredAppointments().length }} agendamento(s) de exemplo
+            </p>
+            <div class="table-wrap" role="region" aria-label="Agendamentos fictícios" tabindex="0">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Horário</th>
+                    <th scope="col">Pet / Tutor</th>
+                    <th scope="col">Serviço</th>
+                    <th scope="col">Profissional</th>
+                    <th scope="col">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  @for (item of filteredAppointments(); track item.pet) {
+                    <tr>
+                      <td>{{ item.time }}</td>
+                      <td>
+                        <strong>{{ item.pet }}</strong
+                        ><small>{{ item.tutor }}</small>
+                      </td>
+                      <td>{{ item.service }}</td>
+                      <td>{{ item.staff }}</td>
+                      <td>
+                        <span
+                          class="status"
+                          [class.pending]="item.status === 'Pendente'"
+                          [class.done]="item.status === 'Finalizado'"
+                          >{{ item.status }}</span
+                        >
+                      </td>
+                    </tr>
+                  }
+                </tbody>
+              </table>
+            </div>
+          } @else {
+            <p class="app-description">
+              Serviços com preço, duração e pacotes de créditos para organizar a oferta do parceiro.
+            </p>
+            <div class="service-grid">
+              @for (service of services; track service.name) {
+                <article class="panel service">
+                  <span class="service-tag">Serviço de exemplo</span>
+                  <h4>{{ service.name }}</h4>
+                  <p>{{ service.description }}</p>
+                  <strong>{{ service.price }}</strong
+                  ><small>{{ service.duration }}</small>
+                </article>
+              }
+            </div>
+            <article class="package">
+              <div>
+                <span class="app-eyebrow">Pacote ilustrativo</span>
+                <h4>Rotina de banho</h4>
+                <p>4 créditos de banho e tosa · Validade de 30 dias</p>
+              </div>
+              <strong>R$ 280<small>Valor fictício</small></strong>
+            </article>
+          }
+        </div>
+      </div>
+    </section>
+    <section class="closing">
+      <span class="eyebrow">Uma nova conexão está sendo construída</span>
+      <h2>Quer conhecer o próximo<br />passo do Easypet?</h2>
+      <p>Converse com a Innker sobre o projeto e sua apresentação.</p>
+      <a
+        class="primary-link"
+        href="mailto:contato@innker.com.br?subject=Quero%20conhecer%20o%20Easypet"
+        >Fale com a Innker <span aria-hidden="true">↗</span></a
+      >
+    </section>
+  </main>
+  <footer>
+    <a href="/">Um projeto da <strong>Innker Tecnologia</strong></a>
+    <nav aria-label="Links institucionais">
+      <a href="/privacy">Privacidade</a><a href="/terms">Termos</a>
+    </nav>
+  </footer>
+</div>

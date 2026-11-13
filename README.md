@@ -8,7 +8,7 @@ Este projeto compreende a Landing Page oficial, o Manual de Identidade Visual (S
 
 - **Framework:** [Angular 21](https://angular.dev/)
 - **Estilização:** [Tailwind CSS v4](https://tailwindcss.com/)
-- **Fonte Oficial:** Montserrat (via Google Fonts)
+- **Fonte Oficial:** Montserrat (arquivo local em `public/fonts`, com licença OFL)
 - **Gerenciador de Pacotes:** npm
 
 ---
@@ -17,7 +17,8 @@ Este projeto compreende a Landing Page oficial, o Manual de Identidade Visual (S
 
 A aplicação utiliza o roteamento nativo do Angular com carregamento preguiçoso (*Lazy Loading*) para melhor performance do carregamento inicial:
 
-- **`/` (Home):** Landing Page provisória ("Em Breve") com animações modernas e glow neon.
+- **`/` (Home):** Página institucional com serviços, projetos Setoriza e Easypet, processo de desenvolvimento e contato.
+- **`/easypet` (Easypet):** Apresentação do projeto com demonstração navegável de visão geral, agendamentos e serviços/pacotes. Dados fictícios, sem conexão com APIs de produção.
 - **`/brand` (Manual da Marca):** Styleguide vivo contendo paleta de cores (HEX, RGB, CMYK, Pantone), regras de contraste, escala tipográfica, conformidade do logotipo e especificações dos componentes de UI (botões interativos).
 - **`/privacy` (Política de Privacidade):** Página legal obrigatória para integrações e aprovação de aplicativos na API oficial da Meta (WhatsApp, Facebook Login, etc.).
 - **`/terms` (Termos de Uso):** Termos e condições gerais de uso das ferramentas e integrações da Innker.
@@ -27,7 +28,7 @@ A aplicação utiliza o roteamento nativo do Angular com carregamento preguiços
 ## ⚙️ Configuração Local
 
 ### Pré-requisitos
-Certifique-se de ter o **Node.js** (versão 18 ou superior) instalado em sua máquina.
+Certifique-se de ter o **Node.js** (versão 22.12 ou superior compatível com Angular 21) instalado em sua máquina.
 
 ### Passos para Instalação
 
@@ -65,3 +66,7 @@ Os arquivos finais serão gerados no diretório `dist/innker`.
 ## ☁️ Deploy na Vercel
 
 O deploy contínuo desta aplicação está configurado para a Vercel, realizando builds automáticos a cada commit na branch principal (`main` ou `master`).
+
+## Referências da apresentação Easypet
+
+A demonstração usa a paleta, marca e ilustração do [repositório Easypet](https://github.com/Randygomesdev/Easypet), com referência em `Frontend/docs/design-system.md` e nas telas `DashboardPage`, `AgendamentosPage`, `ServicosPage` e `PacotesPage`. A interface foi adaptada para apresentação; não é uma instância operacional do sistema.

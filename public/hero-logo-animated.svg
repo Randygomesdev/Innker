@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1672 941" fill="none">
+  <style>
+    .trace { stroke: #ff7979; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; stroke-dasharray: 90 1110; animation: travel 9s linear infinite; }
+    .second { animation-delay: -3s; }
+    .third { animation-delay: -6s; }
+    @keyframes travel { from { stroke-dashoffset: 1200; } to { stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) { .trace { animation: none; stroke: #ff353d; stroke-dasharray: none; opacity: .35; } }
+  </style>
+  <!-- Visible contours only: highlights stay behind the laptop. -->
+  <path class="trace" pathLength="1200" d="M1077 416L963 580L824 577L1082 203L1235 199L1228 210"/>
+  <path class="trace second" pathLength="1200" d="M1248 207L1321 102L1482 97L1418 187"/>
+  <path class="trace third" pathLength="1200" d="M1543 172L1596 98L1672 96M1672 287L1571 428"/>
+</svg>

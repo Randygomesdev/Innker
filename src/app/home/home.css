@@ -1,0 +1,84 @@
+.portfolio-section { padding: 96px 7%; border-top: 1px solid #ffffff26; scroll-margin-top: 96px; }
+.section-heading { max-width: 780px; margin-bottom: 48px; }
+.eyebrow, .project-category { color: #ff6268; font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.section-heading h2 { margin: 24px 0; font-size: clamp(36px, 4.3vw, 64px); font-weight: 900; line-height: 1.05; letter-spacing: -.045em; text-transform: uppercase; }
+.section-heading p, .about-copy p { color: #b8b8b8; font-size: 18px; line-height: 1.75; }
+.project-feature { display: grid; grid-template-columns: 1fr 1.15fr; border: 1px solid #ffffff26; background: #101010; }
+.project-copy { padding: 40px; }
+.project-logo { display: block; object-fit: contain; object-position: left; margin: 26px 0; max-width: 100%; }
+.project-copy h3 { font-size: clamp(23px, 2.2vw, 32px); font-weight: 700; line-height: 1.25; letter-spacing: -.025em; }
+.project-copy p, .project-next p, .process-grid p { color: #b8b8b8; font-size: 15px; line-height: 1.8; margin: 20px 0; }
+.project-capabilities { list-style: none; padding: 0; margin: 24px 0; font-size: 14px; }
+.project-capabilities li { padding: 10px 0 10px 18px; border-bottom: 1px solid #ffffff12; position: relative; }
+.project-capabilities li::before { content: ''; position: absolute; left: 0; top: 18px; width: 5px; height: 5px; background: #ff6268; }
+.project-link { display: inline-flex; align-items: center; gap: 32px; padding: 16px 22px; background: #ed1c24; color: white; font-size: 14px; font-weight: 700; }
+.project-link:hover { background: #ba151c; }
+.project-note { display: block; margin-top: 18px; color: #aaa; font-size: 11px; line-height: 1.6; }
+.project-visual { margin: 0; min-width: 0; display: flex; flex-direction: column; justify-content: center; background: #171313; overflow: hidden; }
+.project-visual img { width: 100%; height: auto; }
+.project-visual figcaption { padding: 24px; text-align: center; font-size: 11px; color: #aaa; letter-spacing: .06em; }
+.project-next { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; padding: 44px 0; border-bottom: 1px solid #ffffff26; }
+.project-next h3 { margin-top: 22px; font-size: clamp(38px, 5vw, 70px); font-weight: 800; letter-spacing: -.04em; }
+.project-next h3 span { color: #606060; margin-left: 30px; font-weight: 400; }
+.project-status { display: inline-block; border: 1px solid #ffffff30; padding: 6px 10px; font-size: 11px; color: #ccc; }
+.text-link { display: inline-flex; gap: 20px; color: #ff6268; font-weight: 700; font-size: 14px; }
+.text-link:hover { text-decoration: underline; text-underline-offset: 5px; }
+.process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+.process-grid article { border-top: 1px solid #ffffff30; padding-top: 24px; }
+.process-number { font-family: monospace; color: #ff6268; font-size: 14px; }
+.process-grid h3 { font-weight: 700; font-size: 20px; margin-top: 24px; }
+.about-section { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; background: #101010; }
+.about-section .section-heading { margin: 0; }
+.about-section em { color: #ed1c24; }
+.about-copy p { margin-bottom: 24px; }
+.skip-link { position: fixed; top: -100px; left: 16px; z-index: 100; padding: 14px; background: white; color: black; }
+.skip-link:focus { top: 10px; }
+:host a:focus-visible, :host summary:focus-visible { outline: 3px solid #ff9397; outline-offset: 5px; }
+@media (max-width: 800px) {
+  .portfolio-section { padding: 64px 6%; scroll-margin-top: 64px; }
+  .project-feature, .project-next, .about-section, .process-grid { grid-template-columns: 1fr; gap: 28px; }
+  .project-feature { gap: 0; }
+  .project-copy { padding: 28px 22px; }
+  .project-next h3 { margin-top: 12px; }
+}
+
+.hero-art {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: .3;
+  mask-image: linear-gradient(90deg, transparent, #000 50%);
+}
+
+.hero-art-scene {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: max(100%, 1000px);
+  aspect-ratio: 1672 / 941;
+}
+
+.hero-art-scene img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-art-scene .hero-art-contour {
+  position: absolute;
+  inset: 0;
+}
+
+@media (min-width: 1024px) {
+  .hero-art {
+    opacity: 1;
+    mask-image: linear-gradient(90deg, transparent 25%, #000 53%);
+  }
+
+  .hero-art-scene {
+    top: -3vw;
+    width: 94%;
+  }
+}
