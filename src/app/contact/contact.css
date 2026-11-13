@@ -1,0 +1,38 @@
+:host { display: block; }
+.contact-section { background: #101013; padding: 88px 7%; scroll-margin-top: 96px; border-top: 1px solid #ffffff24; }
+.contact-intro { text-align: center; max-width: 900px; margin: 0 auto; }
+.contact-eyebrow { color: #ff747a; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.contact-intro h2 { margin: 24px 0; font-size: clamp(28px, 3.2vw, 44px); line-height: 1.25; font-weight: 650; letter-spacing: -.04em; }
+.contact-intro p { color: #b4b4bf; font-size: 14px; line-height: 1.8; }
+.contact-button { display: inline-flex; align-items: center; justify-content: center; gap: 18px; min-height: 48px; padding: 14px 22px; border-radius: 8px; font-size: 13px; font-weight: 650; cursor: pointer; }
+.whatsapp-button { margin-top: 30px; background: #fff; color: #bb1820; border: 1px solid #ddd; }
+.whatsapp-button:hover { background: #fff0f1; }
+.contact-form { max-width: 720px; margin: 52px auto 0; padding-top: 36px; border-top: 1px solid #38383e; scroll-margin-top: 120px; }
+.contact-form h3 { font-size: clamp(20px, 2.4vw, 24px); line-height: 1.4; font-weight: 650; margin: 0 0 12px; letter-spacing: -.025em; }
+.contact-form > p { color: #b4b4bf; font-size: 13px; line-height: 1.8; margin-bottom: 26px; }
+.contact-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 22px 20px; }
+.contact-fields label { display: block; font-size: 12px; font-weight: 600; }
+.contact-fields label > span { color: #b4b4bf; font-size: 11px; font-weight: 400; }
+.contact-fields input, .contact-fields textarea { display: block; width: 100%; min-width: 0; margin-top: 9px; padding: 12px 14px; border: 1px solid #4b4b55; border-radius: 8px; background: #1c1c23; color: #fff; font: inherit; font-size: 16px; }
+.contact-fields textarea { resize: vertical; min-height: 96px; }
+.contact-message { grid-column: 1 / -1; }
+.contact-form .contact-consent { font-size: 11px; margin: 22px 0 0; }
+.contact-consent a { text-decoration: underline; text-underline-offset: 3px; }
+.submit-button { margin-top: 20px; background: #ed1c24; color: white; border: 0; }
+.submit-button:hover { background: #c9151c; }
+.contact-honeypot { display: none; }
+.innker-footer { background: #f5f5f7; color: #393940; padding: 64px 7% 28px; }
+.footer-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 56px; }
+.footer-brand img { object-fit: contain; object-position: left; }
+.footer-grid p { font-size: 12px; line-height: 1.9; margin: 18px 0; max-width: 340px; }
+.footer-grid h2 { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin: 6px 0 24px; }
+.footer-grid a:not([aria-label]) { font-size: 12px; line-height: 1.8; overflow-wrap: anywhere; }
+.footer-contact a { display: block; margin-bottom: 14px; }
+.footer-start { text-align: right; }
+.footer-start p { margin-left: auto; }
+.footer-start > a, .footer-portfolio { color: #bb1820; font-weight: 600; }
+.footer-bottom { border-top: 1px solid #dcdce1; margin-top: 48px; padding-top: 24px; display: flex; justify-content: space-between; gap: 24px; font-size: 10px; line-height: 1.8; }
+.footer-bottom nav { display: flex; gap: 24px; flex-wrap: wrap; }
+.innker-footer a:hover { text-decoration: underline; text-underline-offset: 4px; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid #ef6068; outline-offset: 4px; }
+@media(max-width: 760px) { .contact-section { padding: 64px 6%; scroll-margin-top: 64px; } .contact-fields, .footer-grid { grid-template-columns: 1fr; } .contact-fields { gap: 18px; } .innker-footer { padding: 48px 6% 24px; } .footer-grid { gap: 28px; } .footer-start { text-align: left; } .footer-start p { margin-left: 0; } .footer-bottom { flex-direction: column; margin-top: 32px; } .footer-bottom nav { gap: 12px 20px; } .contact-eyebrow { font-size: 10px; } }
