@@ -1,5 +1,15 @@
 {
+  "redirects": [
+    {
+      "source": "/easypet",
+      "destination": "https://easypet.innker.com.br/",
+      "permanent": true
+    }
+  ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }

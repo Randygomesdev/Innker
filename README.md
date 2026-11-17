@@ -18,7 +18,7 @@ Este projeto compreende a Landing Page oficial, o Manual de Identidade Visual (S
 A aplicação utiliza o roteamento nativo do Angular com carregamento preguiçoso (*Lazy Loading*) para melhor performance do carregamento inicial:
 
 - **`/` (Home):** Página institucional com serviços, projetos Setoriza e Easypet, processo de desenvolvimento e contato.
-- **`/easypet` (Easypet):** Apresentação do projeto com demonstração navegável de visão geral, agendamentos e serviços/pacotes. Dados fictícios, sem conexão com APIs de produção.
+- **EasyPet:** A apresentação do sistema está em https://easypet.innker.com.br/. O endereço antigo `/easypet` redireciona permanentemente para essa página.
 - **`/brand` (Manual da Marca):** Styleguide vivo contendo paleta de cores (HEX, RGB, CMYK, Pantone), regras de contraste, escala tipográfica, conformidade do logotipo e especificações dos componentes de UI (botões interativos).
 - **`/privacy` (Política de Privacidade):** Página legal obrigatória para integrações e aprovação de aplicativos na API oficial da Meta (WhatsApp, Facebook Login, etc.).
 - **`/terms` (Termos de Uso):** Termos e condições gerais de uso das ferramentas e integrações da Innker.
